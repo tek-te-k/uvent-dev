@@ -11,6 +11,9 @@
 <link rel="stylesheet" media="all" href="css/style.css" />
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/style.js"></script>
+<script src="js/map.js"></script>
+<script async defer src="https://maps.google.com/maps/api/js?key=API_Key&language=ja&callback=initMap"></script>
+
 	
 <!-- Favicon -->
 <link rel="icon" type="image/png" href="img/logo.png">
@@ -39,6 +42,7 @@
             <li><a href="#1">イベント</a></li>
             <li><a href="post.html">イベント投稿ページ</a></li>
             <li><a href="#2">マップ</a></li>
+            <li><a href="#3">カレンダー</a></li>
 
          </ul>
              </div>
@@ -86,18 +90,36 @@
 
 		
 <section id="2">
-        <h2 class="center"><span class="under">マップ</span></h2>
-<div class="container">
-<div class="row">
-    <div class="col span-12">
-	<!-- GoogleMap -->
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d211586.4004791782!2d131.14190422682552!3d34.04290896199438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3544802abd239d3d%3A0xa1d6c8490e2ef482!2z5bGx5Y-j55yM5a6H6YOo5biC!5e0!3m2!1sja!2sjp!4v1670217752760!5m2!1sja!2sjp" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-  <!-- /GoogleMap -->
+<h2 class="center"><span class="under">マップ</span></h2>
+    <div class="container">
+        <div class="row">
+            <div class="col span-12">
+            <!-- GoogleMap -->
+            <div class="calendar" id="map" style="width:800px; height:600px"></div>
+            <!-- /GoogleMap -->
+            </div>
+        </div>	
     </div>
-    </div>	
-	</div>
+    
+    
 </section>
-        
+
+<section id="3" class="gray-back">
+    <h2 class="center"><span class="under">カレンダー</span></h2>
+<div class="container">
+    <div class="row">
+        <div class="col span-12">
+            <body>
+                <!-- Googleカレンダー -->
+                <iframe class="calendar" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FTokyo&title=%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC&showNav=1&showPrint=0&showTabs=0&showCalendars=0&showTz=0&src=ZTM5MWRjMDlhOTQ4YzM4ZTc5ZjNhZTNlMDVlZDU5NzVhOTAyNDk2NDk4ZGMyMGRjMTM5NzQ4YTAwMTlmMzM3M0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23F4511E" style="border:solid 1px #FFFDF0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            </body>
+        </div>
+    </div>	
+</div>
+
+
+</section>
+       
     </main>
     <footer>
 <div class="container">
@@ -112,5 +134,6 @@
     </footer>
 
     <p id="pagetop"><a href="#">TOP</a></p>
+
 </body>
 </html>

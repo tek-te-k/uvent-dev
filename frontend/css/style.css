@@ -272,3 +272,42 @@ footer h4 {
 .button_plus a:hover:after {
   right: 1.4rem;
 }
+
+/*カレンダー
+-------------------------------------*/
+.calendar {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+/*****イベント詳細関連*****/
+.detail {
+    font-size:90%;
+    border: none;
+}
+.main-contents {
+    width: 80%;
+    padding: 10px;
+    background-color: #fff;
+    float: left;
+    border-right:3px solid #bfd4f4
+} 
+.side-menu {
+    width: 20%;
+    padding: 10px;
+    background-color: #FFF;
+    float: right;
+    min-height: 60%;
+}
+#contoributor {
+    color: black;
+}
+
+/****投稿者詳細画面関連****/
+.icon {
+    float: left;
+    max-width: 200px;
+    max-height: 150px;
+
+}
