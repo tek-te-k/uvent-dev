@@ -3,7 +3,7 @@ services:
   data-api:
     build:
       context: ./backend
-      dockerfile: ./backend
+      dockerfile: ./Dockerfile
     tty: true
     stdin_open: true
     environment:
