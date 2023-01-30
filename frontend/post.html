@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>uvent</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="icon" type="image/png" href="img/logo.png">
+<link rel="stylesheet" media="all" href="css/ress.min.css" />
+<link rel="stylesheet" media="all" href="css/style.css" />
+<link rel="stylesheet" media="all" href="css/post.css" />
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/style.js"></script>
+<script src="js/post.js"></script>
+	
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="img/logo.png">
+    
+</head>
+<body>
+<header>    
+<div class="container">
+<div class="row">
+    <div class="col span-12 header">
+        <h1><a href="index.html">uvent</a></h1>
+
+</header>
+
+    <main>
+		
+<section id="5">
+        <h2 class="center"><span class="under">投稿</span></h2>
+<div class="container">	
+<div class="row">
+	<div class="col span-12">
+ <form method="post" action="">
+<table class="table full-width">
+  <tbody>
+    <tr>
+        <th class="post"><label for="category">カテゴリー</label></th>
+        <td>
+        <select class="full-sidth" type="category" name="カテゴリー" size="1" required>
+            <option>--カテゴリー選択--</option>
+            <option>パーティ</option>
+            <option>お祭り</option>
+            <option>セミナー</option>
+            <option>ワークショップ</option>
+            <option>コンサート</option>
+            <option>キャンペーン</option>
+            <option>スポーツ</option>
+            <option>フリーマーケット</option>
+            <option>展示会</option>
+            <option>育児</option>
+            <option>自然</option>
+            <option>その他</option>
+        </select>
+        </td>
+    </tr>
+    <tr>
+        <th class="post"><label for="title">タイトル</label></th>
+        <td><input class="full-width" type="text" name="タイトル" placeholder="タイトルを記入" id="TitleInput"></td>
+    </tr>
+	<tr>
+        <th class="post"><label for="Event">イベント説明</label></th>
+        <td><textarea class="full-width textarea" name="イベント説明" placeholder="イベントの説明を記入" id="Detail"></textarea></td>
+    </tr>
+    <tr>
+        <th class="post"><label for="Date">開催日時</label></th>
+        <td>開始：<input class="full-width" type="datetime-local" name="開始日時" id="StartTimeInput"></td>
+        <td>終了：<input class="full-width" type="datetime-local" name="終了日時" id="EndTimeInput"></td>
+    </tr>
+    <tr>
+        <th class="post"><label for="Place">開催場所</label></th>
+        <td><input class="full-width" type="text" name="開催場所" placeholder="会場名を記入" id="PlaceInput"></td>
+    </tr>
+    <tr>
+        <th class="post"><label for="Address">住所</label></th>
+        <td><input class="full-width" type="text" name="会場住所" placeholder="会場の住所を記入" id="AddressInput"></td>
+    </tr>
+    <tr>
+        <th class="post"><label for="Deadline">募集締め切り</label></th>
+        <td><input class="full-width" type="datetime-local" name="開始日時" id="DeadlineInput"></td>
+    </tr>
+    <tr>
+        <th class="post"><label for="image">紹介画像</label></th>
+        <td><input class="full-width" type="file" accept="image/jpeg, image/png" name="紹介画像" id="ImageInput"></td>
+    </tr>
+  </tbody>
+</table>
+<p class="center"><input class="button" type="submit" value="投　稿"></p>
+</form>	
+	
+	</div>
+	</div>
+	</div>
+</section>
+        
+    </main>
+    <footer>
+        <div class="container">
+        <div class="row">
+            <div class="col span-12">
+                <h4>宇部市HP</h4>
+                <p><a href="https://www.city.ube.yamaguchi.jp/">https://www.city.ube.yamaguchi.jp/</a></p>
+            </div>
+        
+                </div>
+        </div>
+            </footer>
+        
+            <p id="pagetop"><a href="#">TOP</a></p>
+        </body>
+</html>

@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>uvent</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="icon" type="image/png" href="img/logo.png">
+<link rel="stylesheet" media="all" href="css/ress.min.css" />
+<link rel="stylesheet" media="all" href="css/style.css" />
+<link rel="stylesheet" media="all" href="css/post.css" />
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/style.js"></script>
+<script src="post.js"></script>
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="img/logo.png">
+    
+</head>
+<body>
+<header>    
+<div class="container">
+<div class="row">
+    <div class="col span-12 header">
+        <h1><a href="index.html">uvent</a></h1>
+
+</header>
+
+<main>
+    <section>
+            <h2 class="center"><span class="under">新規登録</span></h2>
+
+            <div class="container">	
+                <div class="row">
+                    <div class="col span-12">
+                <form method="post" action="">
+                <table class="table full-width">
+                  <tbody>
+                    <tr>
+                        <th class="post"><label for="UserName">お名前</label></th>
+                        <td><input class="full-width" id="name" type="text" name="ユーザーネーム" placeholder="名前を記入" id="UserNameInput"></td>
+                      </tr>
+                      <tr>
+                          <th class="post"><label for="email">メールアドレス</label></th>
+                          <td><input class="full-width" id="email" type="email" name="Email" placeholder="メールアドレスを記入" id="EmailInput"></td>
+                        </tr>
+                      <tr>
+                        <th class="post"><label for="BirthDay">生年月日</label></th>
+                        <td><input class="full-width" id="birth" type="date" name="生年月日" id="BirthInput"></td>
+                      </tr>
+                      <tr>
+                          <th class="post"><label for="Address">ご住所</label></th>
+                          <td><input class="full-width" id="address" type="text" name="住所" placeholder="住所を記入" id="AddressInput"></td>
+                      </tr>
+                      <tr>
+                          <th class="post"><label for="email">自己紹介</label></th>
+                          <td><textarea class="full-width textarea" id="bio" type="textaria" name="自己紹介" id="IntroductionInput"></textarea></td>
+                        </tr>
+                      <tr>
+
+                      </tr>
+                      <tr>
+                          <th class="post"><label for="image">アイコン</label></th>
+                          <td><input class="full-width" id="icon_url" type="file" accept="image/jpeg, image/png" name="アイコン" id="IconInput"></td>
+                      </tr>
+                    <tr>
+                        <th class="post"><label for="password">パスワード</label></th>
+                        <td><input class="full-width" id="password" type="password" name="パスワード" placeholder="パスワードを入力" id="PasswordInput"></td>
+                    </tr>
+                    <tr>
+                        <th class="post"><label for="password">パスワード確認</label></th>
+                        <td><input class="full-width" id="passwordConfirm" type="password" name="パスワード確認" placeholder="パスワードを再入力" id="PasswordConfirmInput"></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p class="center"><input class="button" value="新規登録" onclick="signup()"></p>
+                </form>	
+              </div>
+            </div>
+          </div>
+    </section>
+
+</main>
+
+
+
+</body>
+</html>

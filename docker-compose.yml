@@ -1,0 +1,30 @@
+version: '3.6'
+services:
+  data-api:
+    build:
+      context: ./backend
+      dockerfile: ./backend
+    tty: true
+    stdin_open: true
+    environment:
+      ENGINE: PostgreSQLJDBC
+    ports:
+      - 8080:8080
+    volumes:
+      - ./backend:/app
+    depends_on:
+      - postgres
+  postgres:
+    image: postgres:12
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: postgrespassword
+    ports:
+      - "5432:5432"
+  web:
+    image: nginx:alpine
+    ports:
+      - 8888:80
+    privileged: true
+    volumes:
+      - "./frontend:/usr/share/nginx/html"
